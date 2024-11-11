@@ -3,7 +3,6 @@ This application was developed during the [Santander Dev Week 2024](https://gith
 
 The application allows users to select a champion from League of Legends, ask a question, and receive a response from a Chat Completion model that impersonates the selected champion.
 
-
 # Front-end
 This front-end was built using the [Horizontal Timeline](https://codepen.io/davidbiek/pen/BaWYWME) theme to display League of Legends champions in a carousel format.
 
@@ -130,7 +129,17 @@ mvn verify -Pfailsafe
 >Note: Ensure Docker is running, as the application uses TestContainers to create a PostgreSQL database
 > in Docker for each integration test class.
 
-# OpenAPI Documentation
-To view the full documentation of the API endpoints and schemas, go to `/swagger-ui/index.html`.
-To access the API documentation in JSON format for API clients like Postman, Insomnia, and others,
-use the endpoint `/v3/api-docs`.
+# Documentation
+
+## API Endpoints Preview
+```text
+GET /champions - Retrieve a list of champions.
+
+POST /champions/ask/{id} - Ask a question to a specific champion by ID and retrieve the champion's response.
+```
+
+## OpenAPI Documentation
+- To view the full API documentation, including endpoints and data schemas, open the Swagger UI at:
+  `/swagger-ui/index.html`
+
+- For API documentation in JSON format suitable for tools like Postman, Insomnia, and other API clients, go to: `/v3/api-docs`.
