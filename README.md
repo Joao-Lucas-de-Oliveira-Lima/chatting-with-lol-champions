@@ -1,3 +1,17 @@
+# System Description
+This application was developed during the [Santander Dev Week 2024](https://github.com/digitalinnovationone/santander-dev-week-2024) by the DIO platform.
+
+The application allows users to select a champion from League of Legends, ask a question, and receive a response from a Chat Completion model that impersonates the selected champion.
+
+
+# Front-end
+This front-end was built using the [Horizontal Timeline](https://codepen.io/davidbiek/pen/BaWYWME) theme to display League of Legends champions in a carousel format.
+
+![Screenshot 01 of the Home page](https://raw.githubusercontent.com/Joao-Lucas-de-Oliveira-Lima/lol-chat-frontend/refs/heads/main/images/screenshot_01.png)
+![Screenshot 02 of the Home page](https://raw.githubusercontent.com/Joao-Lucas-de-Oliveira-Lima/lol-chat-frontend/refs/heads/main/images/screenshot_02.png)
+
+# Running the Application
+To run the application, simply open the `index.html` file located in the project root directory.
 # Back-end
 ## About the API
 
@@ -76,7 +90,7 @@ mvn spring-boot:run
 ## Architecture
 The project follows the Clean Architecture principles, as illustrated below.
 
-![rest api architectural diagram](back-end/docs/images/architectural-diagram.png)
+![rest api architectural diagram](https://raw.githubusercontent.com/Joao-Lucas-de-Oliveira-Lima/lol-chat-backend-spring/017d53a728cb53e8fd6565276ee8d4bd80856072/docs/images/architectural-diagram.png)
 
 It includes five main directories:
 - `application`: Contains use cases and interfaces for accessing resources such as databases and HTTP clients.
