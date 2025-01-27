@@ -42,7 +42,6 @@ docker-compose up -d
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Java 21](https://www.oracle.com/br/java/technologies/downloads/#java21)
-- [Apache Maven 3.9.8 or later](https://maven.apache.org/install.html)
 
 ### Steps
 
@@ -79,8 +78,8 @@ groq-cloud.api-key=your_api_key
 #### 3. Run the Application
 In the project root directory, run:
 ```bash
-mvn clean install -DskipTests
-mvn spring-boot:run
+./mvnw clean install -DskipTests
+./mvnw spring-boot:run
 ```
 ## Architecture
 The project follows the Clean Architecture principles, as illustrated below.
@@ -102,11 +101,11 @@ Run the following commands in the terminal, from the application root directory:
 
 - For unit tests:
 ```bash
-mvn test
+./mvnw test
 ```
 - For integration tests:
 ```bash
-mvn verify -Pfailsafe
+./mvnw verify -Pfailsafe
 ```
 >Note: Ensure Docker is running, as the application uses TestContainers to create a PostgreSQL database
 > in Docker for each integration test class.
