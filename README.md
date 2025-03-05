@@ -4,19 +4,22 @@ This application was developed during the [Santander Dev Week 2024](https://gith
 The application allows users to select a champion from League of Legends, ask a question, and receive a response from a Chat Completion model that impersonates the selected champion.
 
 # Front-end
-This front-end was built using the [Horizontal Timeline](https://codepen.io/davidbiek/pen/BaWYWME) theme to display League of Legends champions in a carousel format.
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+This front-end application was developed using the [Horizontal Timeline](https://github.com/digitalinnovationone/santander-dev-week-2024) theme to display League of Legends champions in a carousel format.
 
 ![Screenshot 01 of the Home page](https://raw.githubusercontent.com/Joao-Lucas-de-Oliveira-Lima/lol-chat-frontend/refs/heads/main/images/screenshot_01.png)
 ![Screenshot 02 of the Home page](https://raw.githubusercontent.com/Joao-Lucas-de-Oliveira-Lima/lol-chat-frontend/refs/heads/main/images/screenshot_02.png)
 
 # Running the Application
-To run the application, simply open the `index.html` file located in the project root directory.
-# Back-end
-# System Description
-This application was developed during the [Santander Dev Week 2024](https://github.com/digitalinnovationone/santander-dev-week-2024) by the DIO platform.
+To run the application, simply open the `index.html` file located in the project's root directory in a web browser.
 
-The application allows users to select a champion from League of Legends, ask a question, and receive a response from a Chat Completion model that impersonates the selected champion.
+If you are running a local environment, update the API endpoint in `src/scripts/api.js` by modifying the route attributes to match your local server URL. By default, the endpoint is set to:
 
+```
+http://localhost:8080/champions
+```
 # Back-end
 ![Java](https://img.shields.io/badge/Java-%23F89820.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-%238BC34A.svg?style=for-the-badge&logo=spring&logoColor=white) ![Swagger](https://img.shields.io/badge/Swagger-%238D6E63.svg?style=for-the-badge&logo=swagger&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
 ## About the API
